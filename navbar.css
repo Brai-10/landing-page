@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(228, 15, 15);
+}
+
+.nav-enlace {
+    background-color: rgba(152, 241, 79, 0.993);
+    color: beige;
+    padding: 20px 30px;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.nav-enlace:hover {
+    background-color: blueviolet;
+}
+
+nav {
+    background-color: rgb(36, 20, 20);
+    height: 110px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px 0px;
+    padding: 0px 10px;
+
+}
+
+
+
+.foto img {
+    width: 140px; 
+    height: 110px;
+    display: flex;
+    align-content: center;
+    padding-right: 700px;
+    
+}
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        background-color: black;
+    }
+
+    .nav-enlace {
+        margin: 10px;
+    }
+    }
