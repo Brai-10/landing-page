@@ -33,7 +33,7 @@ body {
 nav {
     background-color: rgb(36, 20, 20);
     height: 7rem;
-    width: 90rem;
+    width: 70rem;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -66,11 +66,13 @@ nav {
     display: flex;
     justify-content: flex-end;
     margin: 100px;
+    
    }
    .imgzapa img {
     width: 550px;
     height: 420px;
     border-radius: 10px;
+    
    }
  .descripcion {
     display: flex;
@@ -119,39 +121,81 @@ nav {
  .promocion span {
     font-family: 'Roboto Mono', monospace;
     font-size: 1.5rem;
+    text-align: center;
     
 
  }
- .promocion p {
-    text-align: center;
-   
+ .promocion {
+   margin-left: 50px;
  }
-
-
-@media (max-width: 1920px )
- {
-   
-nav {
-   width: 91rem;
-}
-    }
-
-    @media (max-width: 1800px)
-     {
-
-      nav{
-         width: 70rem;
-      }
-    }
-    @media (max-width: 1450px )
-    {
-      nav {
+ 
+    @media (max-width: 1900px)
+      { .portada {
          width: 50rem;
       }
-    }
+      .promocion {
+         width: 70rem;
+      }
+      
+     }
+     @media (max-width: 1581px)
+      { .portada {
+         width: 50rem;
+      }
+      .promocion {
+         width: 70rem;
+      }
+   }
+      @media (max-width: 1300px)
+      {
+         .descripcion h1 {
+    font-size: 50px;
+    width: 332px; }
+
+    .imgzapa img {
+        width: 445px;
+    height: 330px;
+    border-radius: 10px;}
+    .promocion  {    
+      width: 60rem;
+    margin-top: 2rem;
+}
+.button  {
+   display: flex;
+
+}
+   
+     }
+     @media (max-width: 1200px)
+     {
+      .descripcion {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-left: 50px;
+     }
+   .imgzapa img {
+       width: 445px;
+   height: 330px;
+   border-radius: 10px;}
+   .promocion  {    
+     width: 60rem;
+   margin-top: 2rem;
+}
+nav {
+   width: 55rem;
+}
+.descripcion h1 {
+   width: 440px;
+   font-size: 50px;
+}
+     }
+/* 
     @media ( max-width: 500px )
      {
-      
+      nav {
+        width: 50rem;
+      }
       .promocion p  {
          text-align: center;
          width: 50rem;
@@ -160,3 +204,14 @@ nav {
  
 
      }
+     @media ( max-width: 400px )
+     {
+      nav { width: 45rem;}
+      .promocion p  {
+         text-align: center;
+         width: 40rem;
+
+      } 
+ 
+
+     } */
