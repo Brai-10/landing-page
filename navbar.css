@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*
+{
+ margin: 0;
+ padding: 0;
+ text-decoration: none;
+ box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(228, 15, 15);
+    background: linear-gradient( #5c258d, #4389a2);
+    width: auto;
 }
 .enlace-nav {
     display: inline-block;
@@ -22,7 +32,8 @@ body {
 
 nav {
     background-color: rgb(36, 20, 20);
-    height: 110px;
+    height: 7rem;
+    width: 90rem;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -33,31 +44,119 @@ nav {
   
 }
 
-.foto a {
+.logo  {
     display: flex;
     justify-content: flex-start;
 }
 
-.foto img {
+.logo img {
     width: 145px; 
     height: 110px;
     border-radius: 20px;
-    border-radius: 20px;
-   box-shadow: 0px 5px 15px 2px #f1f8f8;
+  box-shadow: 0px 5px 15px 2px #f1f8f8;
   
    }
+   .portada {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+}
+   
+   article {
+    display: flex;
+    justify-content: flex-end;
+    margin: 100px;
+   }
+   .imgzapa img {
+    width: 550px;
+    height: 420px;
+    border-radius: 10px;
+   }
+ .descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+ }
+ .descripcion h1 {
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    width: 520px;
+    text-align: center;
+ }
+ .descripcion span {
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+ }
+ .button{
+    margin-top: 32px;
+    
+ }
+ .button, #call, #more {
+    cursor: pointer;
+   
+ }
+ .button #call {
+    padding: 9px;
+    margin-inline: 15px;
+    border-radius: 50px;
+    width: 150px;
+    background-color: #164252;
+    font-size: 20px;
+    color: aliceblue;
+ }
+.button #more {
+    padding: 9px;
+    margin-inline: 45px;
+    border-radius: 50px;
+    width: 150px;
+    font-size: 20px;
+    
+ }
+ .promocion span {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    
+
+ }
+ .promocion p {
+    text-align: center;
+   
+ }
+
+
+@media (max-width: 1920px )
+ {
+   
+nav {
+   width: 91rem;
+}
+    }
+
+    @media (max-width: 1800px)
+     {
+
+      nav{
+         width: 70rem;
+      }
+    }
+    @media (max-width: 1450px )
+    {
+      nav {
+         width: 50rem;
+      }
+    }
+    @media ( max-width: 500px )
+     {
+      
+      .promocion p  {
+         text-align: center;
+         width: 50rem;
+
+      } 
  
 
-@media (max-width: 500px)
- {
-    nav {
-        flex-direction:column;
-        background-color: black;
-    }
-        .menu {
-        flex-direction: column;
-    }
-
-
-    }
-    
+     }
