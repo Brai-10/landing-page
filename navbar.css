@@ -190,28 +190,52 @@ nav {
    font-size: 50px;
 }
      }
-/* 
+
     @media ( max-width: 500px )
      {
       nav {
-        width: 50rem;
+        width: 45rem;
       }
-      .promocion p  {
-         text-align: center;
-         width: 50rem;
+      
+   .imgzapa img {
+       width: 445px;
+   height: 330px;
+   border-radius: 10px;}
+  
+.descripcion span {
+   font-size: 25px;
+   font-family: 'Roboto Mono', monospace;
+   margin-top: 25px;
+   margin-bottom: 15px;
+   text-align: center; }
 
-      } 
- 
-
+.descripcion h1 {
+   width: 440px;
+   font-size: 40px;
+}
+.promocion {
+   width: 47rem;
+   margin-top: 2rem;
      }
+     .imgzapa img {
+      width: 220px;
+      height: 179px;
+      
+      border-radius: 10px;
+   }
+}
      @media ( max-width: 400px )
      {
-      nav { width: 45rem;}
+      nav { width: 42rem;}
       .promocion p  {
          text-align: center;
          width: 40rem;
 
       } 
- 
+      .imgzapa img {
+         width: 220px;
+         height: 179px;
+         
+         border-radius: 10px; }
 
-     } */
+     } 
