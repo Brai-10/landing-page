@@ -36,14 +36,14 @@ body {
 nav {
    background-color: rgb(36, 20, 20);
    height: 7rem;
-   width: 70rem;
+   width: auto;
    display: flex;
    align-content: center;
    justify-content: space-between;
    align-items: center;
    margin: 0px 100px;
    border-radius: 20px;
-   /* box-shadow: 0px 5px 15px 2px #f1f8f8; */
+   box-shadow: 0px 5px 15px 2px #f1f8f8;
 
 }
 
@@ -68,14 +68,14 @@ nav {
 
 article {
    display: flex;
-   justify-content: flex-end;
-   margin: 100px;
+   padding: 20px;
+
 
 }
 
 .imgzapa img {
-   width: 550px;
-   height: 420px;
+   width: 445px;
+   height: 350px;
    border-radius: 10px;
 
 }
@@ -84,21 +84,35 @@ article {
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin-left: 100px;
+
 }
 
 .descripcion h1 {
-   font-size: 70px;
+   font-size: 3rem;
    font-family: 'Roboto', sans-serif;
-   width: 520px;
+
    text-align: center;
+}
+
+.checkbutton {
+   font-size: 30px;
+   color: white;
+   float: right;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+}
+
+#check {
+   display: none;
 }
 
 .descripcion span {
    font-size: 25px;
    font-family: 'Roboto Mono', monospace;
-   margin-top: 60px;
-   margin-bottom: 30px;
+   margin-top: 37px;
+   margin-bottom: 12px;
    text-align: center;
 }
 
@@ -133,170 +147,116 @@ article {
 
 }
 
-.promocion span {
+.imgzapa {
+   margin: 10px;
+   display: flex;
+
+}
+
+.promocion {
+   margin-top: 3rem;
+}
+
+
+.promo span {
    font-family: 'Roboto Mono', monospace;
-   font-size: 1.5rem;
+   font-size: 1.2rem;
    text-align: center;
 
 
 }
 
-.promocion {
-   margin-left: 50px;
+.promo p {
+   display: flex;
 }
 
-@media (max-width: 1900px) {
-   .portada {
-      width: 50rem;
-   }
 
-   .promocion {
-      width: 70rem;
-   }
 
-}
 
-@media (max-width: 1581px) {
-   .portada {
-      width: 50rem;
-   }
-
-   .promocion {
-      width: 70rem;
-   }
-}
-
-@media (max-width: 1300px) {
-   .descripcion h1 {
-      font-size: 50px;
-      width: 332px;
-   }
-
-   .imgzapa img {
-      width: 445px;
-      height: 330px;
-      border-radius: 10px;
-   }
-
-   .promocion {
-      width: 60rem;
-      margin-top: 2rem;
-   }
-
-   .button {
-      display: flex;
-
-   }
-
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
    .descripcion {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-left: 50px;
+      width: auto;
    }
 
    .imgzapa img {
       width: 445px;
-      height: 330px;
+      height: 350px;
       border-radius: 10px;
+
+
    }
 
-   .promocion {
-      width: 60rem;
+   .portada {
+      display: flex;
+      align-items: center;
       margin-top: 2rem;
    }
 
+   .imgzapa {
+      margin: 10px;
+      display: flex;
+
+   }
+
+   .promocion {
+      margin-top: 3rem;
+   }
+
    nav {
-      width: 55rem;
+      background-color: rgb(36, 20, 20);
+      height: 7rem;
+      width: 50rem;
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 5rem;
+      border-radius: 20px;
+      box-shadow: 0px 5px 15px 2px #f1f8f8;
    }
 
    .descripcion h1 {
-      width: 440px;
-      font-size: 50px;
+      font-size: 3rem;
+      font-family: 'Roboto', sans-serif;
+
+      text-align: center;
+
    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
    nav {
-      width: 43rem;
+      width: max-content;
    }
 
 
    .descripcion {
       margin-left: 0px;
-       display: flex;
-         flex-direction: column;
-         align-items: center;
-       
-      }
-   
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+   }
+
 
    article {
-      margin: 0px;
+      display: flex;
+      padding-left: 9px;
    }
 
-   .button #call {
-      font-size: 10px;
-      width: 90px;
+   .button {
+      display: flex;
+      width: 25rem;
    }
 
-   .button #more {
-      font-size: 10px;
-      width: 90px;
+
+   .promo {
+      width: 50rem;
+      display: flex;
    }
 
-   .descripcion span {
-      font-size: 1rem;
-      font-family: 'Roboto Mono', monospace;
-      margin-top: 25px;
-      margin-bottom: 15px;
-      text-align: center;
-   }
-
-   .descripcion h1 {
-      width: 400px;
-      font-size: 2rem;
-   }
-
-   .promocion {
-      width: 30rem;
-      margin-top: 0rem;
-      margin-left: 0rem;
-   }
-
-   .imgzapa img {
-      width: 220px;
-      height: 179px;
-
-      border-radius: 10px;
-   }
-
-   .promocion span {
-      font-size: 1rem;
-   }
-   body { flex-direction: column;}
-
-}
-
-@media (max-width: 400px) {
-   nav {
-      width: 42rem;
-   }
-
-   .promocion p {
-      text-align: center;
-      width: 40rem;
-
-   }
-
-   .imgzapa img {
-      width: 220px;
-      height: 179px;
-
-      border-radius: 10px;
-   }
 
 }
