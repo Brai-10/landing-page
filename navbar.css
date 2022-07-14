@@ -160,7 +160,7 @@ article {
 
 .promo span {
    font-family: 'Roboto Mono', monospace;
-   font-size: 1.2rem;
+   font-size: 1.3rem;
    text-align: center;
 
 
@@ -168,6 +168,8 @@ article {
 
 .promo p {
    display: flex;
+   margin-left: 2rem;
+   width: 70rem;
 }
 
 
@@ -202,8 +204,23 @@ article {
    }
 
    .promocion {
-      margin-top: 3rem;
+      margin-top: 2rem;
    }
+   
+.promo span {
+   font-family: 'Roboto Mono', monospace;
+   font-size: 1.3rem;
+   text-align: center;
+
+
+}
+
+.promo p {
+   display: flex;
+   margin-left: 2rem;
+   width: 70rem;
+}
+
 
    nav {
       background-color: rgb(36, 20, 20);
