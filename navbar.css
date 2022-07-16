@@ -90,9 +90,13 @@ article {
 .descripcion h1 {
    font-size: 3rem;
    font-family: 'Roboto', sans-serif;
-
+    color: rgb(243, 221, 219);
    text-align: center;
-}
+   background: linear-gradient(rgba(247, 239, 239, 0.87),rgb(55, 255, 55));
+   -webkit-background-clip: text;
+   color: transparent;  
+ }
+
 
 .checkbutton {
    font-size: 30px;
@@ -218,7 +222,7 @@ article {
 .promo p {
    display: flex;
    margin-left: 2rem;
-   width: 70rem;
+   width: 55rem;
 }
 
 
@@ -230,7 +234,7 @@ article {
       align-content: center;
       justify-content: space-between;
       align-items: center;
-      margin-left: 5rem;
+      margin-left: 4rem;
       border-radius: 20px;
       box-shadow: 0px 5px 15px 2px #f1f8f8;
    }
@@ -274,6 +278,107 @@ article {
       width: 50rem;
       display: flex;
    }
-
+.imgzapa {
+   margin: 0;
+}
 
 }
+@media (max-width: 450px) {
+   
+   .header {
+      width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+   
+   .nav {
+    margin: 0;
+    width: auto;
+     
+      }
+   
+   
+   .descripcion {
+      width: 17rem;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+    .portada {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+    .descripcion span {
+      font-size: 1.1rem;
+      font-family: 'Roboto Mono', monospace;
+      margin-top: 23px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+   .descripcion h1 {
+      font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+   }
+   .imgzapa img {
+      width: 393px;
+      height: 280px;
+      border-radius: 10px; }
+      
+      .button #call {
+         padding: 9px;
+         margin-inline: 15px;
+         border-radius: 50px;
+         width: 122px;
+         background-color: #164252;
+         font-size: 15px;
+         color: aliceblue;}
+        
+         .button #more {
+            padding: 9px;
+            margin-inline: 45px;
+            border-radius: 50px;
+            width: 122px;
+            font-size: 15px;
+  }
+  .button {
+   margin-left: 4rem;
+
+  }
+ 
+
+.article {
+ padding: 2rem;
+   margin: 0;
+}
+
+.promo {
+   width: auto;
+   display: flex;
+}
+
+.promo span {
+   font-family: 'Roboto Mono', monospace;
+   font-size: 1rem;
+   text-align: center;
+
+}
+.enlace-nav {
+   display: inline-block;
+   text-decoration: none;
+   color: white;
+   font-size: 1.01rem;
+   padding: 0px 5px;
+}
+.menu {
+   display: flex;
+   padding: 0px 100px;
+   list-style-type: none;
+   flex-direction: column;
+   justify-content: center;
+}
+} 
