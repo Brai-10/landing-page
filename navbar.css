@@ -90,12 +90,12 @@ article {
 .descripcion h1 {
    font-size: 3rem;
    font-family: 'Roboto', sans-serif;
-    color: rgb(243, 221, 219);
+   color: rgb(243, 221, 219);
    text-align: center;
-   background: linear-gradient(rgba(247, 239, 239, 0.87),rgb(55, 255, 55));
+   background: linear-gradient(rgba(247, 239, 239, 0.87), rgb(55, 255, 55));
    -webkit-background-clip: text;
-   color: transparent;  
- }
+   color: transparent;
+}
 
 
 .checkbutton {
@@ -210,20 +210,20 @@ article {
    .promocion {
       margin-top: 2rem;
    }
-   
-.promo span {
-   font-family: 'Roboto Mono', monospace;
-   font-size: 1.3rem;
-   text-align: center;
+
+   .promo span {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 1.3rem;
+      text-align: center;
 
 
-}
+   }
 
-.promo p {
-   display: flex;
-   margin-left: 2rem;
-   width: 55rem;
-}
+   .promo p {
+      display: flex;
+      margin-left: 2rem;
+      width: 55rem;
+   }
 
 
    nav {
@@ -278,107 +278,135 @@ article {
       width: 50rem;
       display: flex;
    }
-.imgzapa {
-   margin: 0;
-}
+
+   .imgzapa {
+      margin: 0;
+   }
 
 }
+
 @media (max-width: 450px) {
-   
-   .header {
+
+   header {
       width: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-   
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: center;
+   }
+
    .nav {
-    margin: 0;
-    width: auto;
-     
-      }
-   
-   
+      margin: auto;
+      width: auto;
+
+   }
+
+
    .descripcion {
       width: 17rem;
-    }
-    main {
+   }
+
+   main {
       display: flex;
       flex-direction: column;
-    }
-    .portada {
+   }
+
+   .portada {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-  }
-    .descripcion span {
+   }
+
+   .descripcion span {
       font-size: 1.1rem;
       font-family: 'Roboto Mono', monospace;
       margin-top: 23px;
       margin-bottom: 12px;
       text-align: center;
-    }
+   }
+
    .descripcion h1 {
       font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
    }
+
    .imgzapa img {
       width: 393px;
       height: 280px;
-      border-radius: 10px; }
-      
-      .button #call {
-         padding: 9px;
-         margin-inline: 15px;
-         border-radius: 50px;
-         width: 122px;
-         background-color: #164252;
-         font-size: 15px;
-         color: aliceblue;}
-        
-         .button #more {
-            padding: 9px;
-            margin-inline: 45px;
-            border-radius: 50px;
-            width: 122px;
-            font-size: 15px;
-  }
-  .button {
-   margin-left: 4rem;
+      border-radius: 10px;
+   }
 
-  }
- 
+   .button #call {
+      padding: 9px;
+      margin-inline: 15px;
+      border-radius: 50px;
+      width: 122px;
+      background-color: #164252;
+      font-size: 15px;
+      color: aliceblue;
+   }
 
-.article {
- padding: 2rem;
-   margin: 0;
-}
+   .button #more {
+      padding: 9px;
+      margin-inline: 45px;
+      border-radius: 50px;
+      width: 122px;
+      font-size: 15px;
+   }
 
-.promo {
-   width: auto;
-   display: flex;
-}
+   .button {
+      margin-left: 4rem;
 
-.promo span {
-   font-family: 'Roboto Mono', monospace;
-   font-size: 1rem;
-   text-align: center;
+   }
 
+   .promocion {
+      display: flex;
+      /* margin: 0; */
+      align-items: stretch;
+      flex-direction: column;
+   }
+
+   .article {
+      margin: 0;
+      padding-left: 0;
+   }
+
+   .promo {
+      width: auto;
+      display: flex;
+   }
+
+   .promo p {
+      width: auto;
+      text-align: center;
+      margin: auto;
+
+   }
+
+   .promo span {
+
+      font-family: 'Roboto Mono', monospace;
+      text-align: center;
+      width: 25rem;
+      font-size: larger;
+
+
+   }
+
+   .enlace-nav {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      font-size: 1.01rem;
+      padding: 0px 5px;
+   }
+
+   .menu {
+      display: flex;
+      padding: 0px 100px;
+      list-style-type: none;
+      flex-direction: column;
+      justify-content: center;
+   }
 }
-.enlace-nav {
-   display: inline-block;
-   text-decoration: none;
-   color: white;
-   font-size: 1.01rem;
-   padding: 0px 5px;
-}
-.menu {
-   display: flex;
-   padding: 0px 100px;
-   list-style-type: none;
-   flex-direction: column;
-   justify-content: center;
-}
-} 
