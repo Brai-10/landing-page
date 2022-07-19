@@ -88,7 +88,8 @@ article {
 }
 
 .descripcion h1 {
-   font-size: 3rem;
+   font-size: 4rem;
+   width: 30rem;
    font-family: 'Roboto', sans-serif;
    color: rgb(243, 221, 219);
    text-align: center;
@@ -202,8 +203,9 @@ article {
    }
 
    .imgzapa {
-      margin: 10px;
+      padding: inherit;
       display: flex;
+      margin-inline-start: auto;
 
    }
 
@@ -240,9 +242,9 @@ article {
    }
 
    .descripcion h1 {
-      font-size: 3rem;
+      font-size: 4rem;
       font-family: 'Roboto', sans-serif;
-
+     width: 30rem;
       text-align: center;
 
    }
