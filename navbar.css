@@ -244,6 +244,12 @@ nav {
    margin: 3.5rem 2rem;
 
 }
+.button,
+   #call,
+   #more {
+      cursor: pointer;
+      display: flex;
+   }
 
 
 .titlecard h2 {
@@ -494,6 +500,7 @@ footer {
 
 
    }
+   
 
    .imagenz img {
       width: 300px;
@@ -550,7 +557,7 @@ footer {
       display: flex;
       justify-content: center;
       background-color: black;
-      width: max-content;
+      width: auto;
    }
 
    .footerimg img {
@@ -570,10 +577,19 @@ footer {
       margin-top: 2rem;
       justify-content: center;
    }
+   button,
+   #call,
+   #more {
+      cursor: pointer;
+      display: flex;
+   }
 
    .descripcion span {
       width: 300px;
       font-size: 1.4rem;
+   }
+   footer {
+      width: max-content;
    }
 }
 
@@ -588,11 +604,11 @@ footer {
 
 @media (max-width: 520px) {
    header {
-      width: auto;
+      width: 600px;
    }
 
    nav {
-
+       width: auto;
       display: flex;
       justify-content: space-between;
    }
@@ -600,6 +616,7 @@ footer {
    .menu {
       display: none;
    }
+
 
    .checkbutton {
       display: block;
@@ -609,6 +626,9 @@ footer {
       left: 0;
       width: 75vh;
       height: auto;
+   }
+   .imagenz {
+      display: none;
    }
 
    .menu {
@@ -621,15 +641,31 @@ footer {
       z-index: 10;
       transition: all 2s;
    }
+   .promo p {
+      display: flex;
+      width: 500px;
+      text-align: center;
+  }
 
    .portada {
       display: flex;
       margin-top: 2rem;
-
+      justify-content: flex-start;
+      align-content: center;
+   }
+   .promocion {
+      display: flex;
+      justify-content: flex-start;
    }
 
    .checkbutton {
       display: block;
+   }
+   .titlecard {
+      width: 450px;
+   }
+   .cardtext {
+      width: 560px;
    }
 
    #check:checked~ul {
@@ -643,17 +679,51 @@ footer {
       cursor: pointer;
       display: flex;
    }
+   .sectioncards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 51rem;
+  }
 
    .cards {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
    }
+   .copy {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row-reverse;
+  }
+  .style {
+   display: none;
+  }
+  .footerimg img {
+   width: 22vh;
+   height: 18vh;
+   border: #4389a2 solid;
+}
+   
+   /* .footerimg {
+      margin: 1rem;
+  } */
 }
 
 
-@media (max-width: 450px) {
-   .menu {
+@media (max-width: 442px) 
+{
+   
+   .style {
+   display: none;
+     
+   }
+   footer {
+      width: 699px
+      
+   }
+   /* .menu {
       display: none;
    }
 
@@ -667,114 +737,7 @@ footer {
       height: 19vh;
    }
 
-   .nav {
-
-      display: flex;
-      justify-content: space-between;
-      width: auto;
-
-   }
-
-   /* .button #more:hover {
-      background-color: #164252;
-      
-      transition: 0.5s;
-      transform: scale(1.5);
-   }
-    */
-   .descripcion {
-      width: 17rem;
-   }
-
-   main {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-   }
-
-   .portada {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-   }
-
-   .descripcion span {
-      font-size: 1.1rem;
-      font-family: 'Roboto Mono', monospace;
-      margin-top: 23px;
-      margin-bottom: 12px;
-      text-align: center;
-   }
-
-   .descripcion h1 {
-      font-size: 2rem;
-      font-family: 'Roboto', sans-serif;
-      text-align: center;
-   }
-
-   .imagenz {
-      margin-top: 2rem;
-
-   }
-
-   .imgzapa img {
-      width: 393px;
-      height: 280px;
-      border-radius: 10px;
-   }
-
-   .button #call {
-      padding: 9px;
-      margin-inline: 15px;
-      border-radius: 50px;
-      width: 122px;
-      background-color: #164252;
-      font-size: 15px;
-      color: aliceblue;
-   }
-
-   .button #more {
-      padding: 9px;
-      margin-inline: 45px;
-      border-radius: 50px;
-      width: 122px;
-      font-size: 15px;
-   }
-
-   .button {
-      margin-left: 4rem;
-
-   }
-
-   .promocion {
-      display: flex;
-      /* margin: 0; */
-      align-items: stretch;
-      flex-direction: column;
-   }
-
-   .promo {
-      width: auto;
-      display: flex;
-   }
-
-   .promo p {
-      width: auto;
-      text-align: center;
-      margin: auto;
-
-   }
-
-   .promo span {
-
-      font-family: 'Roboto Mono', monospace;
-      text-align: center;
-      width: 25rem;
-      font-size: larger;
-
-
-   }
-
+   
    .enlace-nav {
       color: #bc6ef2;
       font-size: 1.05rem;
@@ -793,22 +756,5 @@ footer {
       z-index: 10;
       transition: all 2s;
 
-   }
-
-   .cards {
-      display: flex;
-      align-items: center;
-      /* margin-left: 15rem; */
-      flex-wrap: wrap;
-   }
-
-   .card {
-      flex-wrap: wrap;
-   }
-
-   .footer {
-      display: flex;
-      /*   flex-direction: column; */
-      flex-wrap: wrap;
-   }
-}
+   }*/
+ }
